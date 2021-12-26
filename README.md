@@ -61,27 +61,31 @@ For best results, it is recommended to open as a Jupyter Notebook.
 
 ## Background
 
-The app creates a baseline trading algorithm. The baseline algorithim utilizes a test dataset of three months, and short and long SMA windows of 4 and 100 respectively. Then, the baseline is tuned and adjusted as described below:
+The app creates a baseline trading algorithm. The baseline algorithim utilizes an SVM model with test dataset of three months, and short and long SMA windows of 4 and 100 respectively. Then, the baseline is tuned and adjusted as described below:
 
    1. The model compared test results using two different test timeframe slices of three months and six months, begining April 20, 2015. While the strategy using the longer timeframe initially does not produce returns greater than that of the actuals, in the longrun they greatly outperform the returns of the actuals and of the shorter timeframe strategy. Therefore, the bot was adjusted to utilize the longer test dataset.
 
    2. The model compared test results using different SMA periods. By increasing the SMA short and long windows from 4 & 100 to 20 & 150, the returns decreased. Ultimately, the increase in SMA windows resulted in returns below that of the actual returns. Therefore, the original windows on 4 & 100 are utilized in this bot. 
 
-The visualizations below compare the baseline algorthim to the tuned algorithm, as described in the section above:
+   The visualizations below compare the baseline algorthim to the tuned algorithm, as described in the section above:
 
-Baseline:
+   Baseline:
 
-![Three Month Strategy Returns Compared to Actual](images/actual_v_strategy_plot.png)
+   ![Three Month Strategy Returns Compared to Actual](images/actual_v_strategy_plot.png)
 
-Tuned:
+   Tuned:
 
-![Six Month Strategy Returns COmpared to Actual](images/tuned_actual_v_strategy_plot.png)
+   ![Six Month Strategy Returns COmpared to Actual](images/tuned_actual_v_strategy_plot.png)
+   
+Using the baseline model, a Logistic Regression classifer was used and compared to the SVM model. Comparison shows the SVM model outperforms the Logistic Regression model. As shown below, the Logistic Regression model produces substandard returns. Therefore, it is recommended to implement the SVM classifier in this case.
 
+   LR:
 
+   ![LR](images/lr_actual_v_strategy_plot.png)
 
 ---
 
-
+ 
 ## Contributors
 
 **Contributor:** Lindsey Hardouin<br>
