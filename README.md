@@ -59,19 +59,19 @@ For best results, it is recommended to open as a Jupyter Notebook.
 
 The app creates a baseline trading algorithm. Then, the baseline is tuned by 1) adjusting the size of the training dataset, and 2) adjusting the SMA input feature periods.The details and results are as follows:
 
-    1. The model compared test results using two different test timeframe slices of three months and six months, begining April 20, 2015. The strategy using the longer timeframe resulted in greater returns than that of the shorter timeframe. Therefore, the bot was adjusted to utilize the longer test dataset.
+   1. The model compared test results using two different test timeframe slices of three months and six months, begining April 20, 2015. The strategy using the longer timeframe resulted in greater returns than that of the shorter timeframe. Therefore, the bot was adjusted to utilize the longer test dataset.
 
-    2. The model compared test results using different SMA periods. By increasing the SMA windows from 4 & 100 to 20 & 150, the returns decreased. Ulitamately, the increase in SMA window resulted in returns below that of the actual returns. Therefore, the original windows on 4 & 100 are utilized in this bot. 
+   2. The model compared test results using different SMA periods. By increasing the SMA windows from 4 & 100 to 20 & 150, the returns decreased. Ulitamately, the increase in SMA window resulted in returns below that of the actual returns. Therefore, the original windows on 4 & 100 are utilized in this bot. 
 
 The visualizations below compare the baseline algorthim to the tuned algorithm, as described in the section above:
 
 Baseline:
 
-![Three Month Strategy Returns Compared to Actual](images/actual_v_strategy.png)
+![Three Month Strategy Returns Compared to Actual](images/actual_v_strategy_plot.png)
 
 Tuned:
 
-![Six Month Strategy Returns COmpared to Actual](images/tuned_actual_v_strategy.png)
+![Six Month Strategy Returns COmpared to Actual](images/tuned_actual_v_strategy_plot.png)
 
 
 
