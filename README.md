@@ -59,7 +59,7 @@ For best results, it is recommended to open as a Jupyter Notebook.
 
 ---
 
-## Background
+## Evaluation Summary
 
 The app creates a baseline trading algorithm. The baseline algorithim utilizes an SVM model with test dataset of three months, and short and long SMA windows of 4 and 100 respectively. Then, the baseline is tuned and adjusted as described below:
 
