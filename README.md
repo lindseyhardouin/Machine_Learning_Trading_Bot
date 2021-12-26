@@ -61,7 +61,7 @@ For best results, it is recommended to open as a Jupyter Notebook.
 
 ## Background
 
-The app creates a baseline trading algorithm. Then, the baseline is tuned and adjusted as described below:
+The app creates a baseline trading algorithm. The baseline algorithim utlizes a test dataset of three months, and short and long SMA windows of 4 and 100 respectively. Then, the baseline is tuned and adjusted as described below:
 
    1. The model compared test results using two different test timeframe slices of three months and six months, begining April 20, 2015. While the strategy using the longer timeframe initially does not produce returns greater than that of the actuals, in the longrun they greatly outperform the returns of the actuals and of the shorter timeframe strategy. Therefore, the bot was adjusted to utilize the longer test dataset.
 
